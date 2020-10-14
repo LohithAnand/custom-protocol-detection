@@ -54,7 +54,7 @@ function openUriWithTimeoutHack(uri, failCb, successCb) {
     var timeout = setTimeout(function () {
         failCb();
         handler.remove();
-    }, 1000);
+    }, 3000);
 
     //handle page running in an iframe (blur must be registered with top level window)
     var target = window;

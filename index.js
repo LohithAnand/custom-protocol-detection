@@ -62,6 +62,7 @@ function openUriWithTimeoutHack(uri, failCb, successCb) {
         target = target.parent;
     }
 
+    target.focus();
     var handler = _registerEvent(target, "blur", onBlur);
 
     function onBlur() {
